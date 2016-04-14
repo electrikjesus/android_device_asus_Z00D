@@ -24,5 +24,11 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 536870912 # 536870912
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1363148800
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Inline kernel building
+TARGET_KERNEL_SOURCE := kernel/asus/Z00D
+TARGET_KERNEL_ARCH := x86
+BOARD_KERNEL_IMAGE_NAME := bzImage
+TARGET_KERNEL_CONFIG := cyanogenmod_Z00D_defconfig
+
 # Use the non-open-source parts, if they're present
 -include vendor/asus/Z00D/BoardConfigVendor.mk
