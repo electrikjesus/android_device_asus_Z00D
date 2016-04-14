@@ -17,8 +17,6 @@
 # inherit from common cvtlp-common
 -include device/asus/cvtlp-common/BoardConfigCommon.mk
 
-TARGET_RELEASETOOLS_EXTENSIONS := device/asus/Z00D
-
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5129031680 ##5129048064 - 16384
